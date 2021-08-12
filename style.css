@@ -1,0 +1,13 @@
+#credentials {
+    text-align: center;
+}
+
+#credentials input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#credentials button {
+    margin-top: 12px;
+}
