@@ -58,20 +58,14 @@ window.onload = function() {
             },
         });
 
-        if (sessionStorage.length != 0) {
-            data.datapoints.push(yourCarbonfootPrint);
-            massPopChart.data = data;
-            massPopChart.update();
-        }
+        
 }
 
 function goto_form_page() {
     window.location.href = "formPage.html";
 }
 
-function update_page() {
 
-}
 
 
 function getSessionStorage(){
@@ -195,25 +189,28 @@ function generateFootprintonPage(yourCarbonfootPrint) {
 };
 
 function generateInsight(yourCarbonfootPrint) {
-    var isBetterorWorsethanAverage;
     
     yourCarbonfootPrint = Math.round(yourCarbonfootPrint);
-    if (2600 - yourCarbonfootPrint < 0){
+    if (2600 - yourCarbonfootPrint >= 0){
         var tempCarbonfootprintdisplay = Math.abs(2600-yourCarbonfootPrint)
         let htmlStringdetails = 
         
         `<summary> How Do I Compare? </summary>
         <p> The average American has a carbon footprint of about 1.3 tons a month. </p>
-        <p> Your current footprint is ${2600 - yourCarbonfootPrint} lbs greater than that. Keep up the good work! </p>
+        <p> Your current footprint is ${2600 - yourCarbonfootPrint} lbs less than that. Keep up the good work! </p>
         <br>`;
-    }
-    let htmlStringdetails = 
-    
-    `<summary> How Do I Compare? </summary>
-    <p> The average American has a carbon footprint of about 1.3 tons a month. </p>
-    <p> Your current footprint is ${2600 - yourCarbonfootPrint} lbs less than that. Keep up the good work! </p>
-    <br>`;
         comparison.innerHTML = htmlStringdetails;
+    }
+    else{
+        var tempCarbonfootprintdisplay = Math.abs(2600-yourCarbonfootPrint)
+        var htmlStringdetails = 
+        
+        `<summary> How Do I Compare? </summary>
+        <p> The average American has a carbon footprint of about 1.3 tons a month. </p>
+        <p> Your current footprint is ${tempCarbonfootprintdisplay} lbs greater than that. Work on keeping your emmisions lower! </p>
+        <br>`;
+        comparison.innerHTML = htmlStringdetails;
+    }
 };
 
 
