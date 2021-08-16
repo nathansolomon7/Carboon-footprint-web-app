@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    font-family: "Cambria";
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #444444;
+}
+
+#credentials {
+    text-align: center;
+}
+
+#credentials input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#credentials button {
+    margin-top: 12px;
+}
+
+#emission_chart {
+
+}
+
+#divider {
+    border: 1px solid black;
+}
+
+#comparison {
+    margin: 5px;
+    width: 800px;
+}
+
+#comparison p {
+    font-size: 16px;
+}
+
+form {
+    /* display: inline-block; */
+    text-align:center;
+}
+
+#formDiv{
+    margin: 0 auto; 
+    width:500px;
+    padding-right: 100px;    
+}
+
+input{
+    min-height:15px;
+}
+
+#submitButton{
+    min-height:45px;
+    min-width:90px;
+    font-size: 17px;
+     font-weight: bold;
+     background-color: #78AB46; 
+}
+
+#add_data_button {
+    font-family: inherit;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 5px;
+    background-color: limegreen;
+    color: white;
+    font-weight: bold;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+#footprintTitle{
+    /* margin-left:500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#footprintValueholder{
+    font-size:30px;
+    font-weight: bold;
+}

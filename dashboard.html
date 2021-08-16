@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="dashboard.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+        
+    </head>
+
+    <body>
+        <ul id="nav_bar">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="formPage.html">Add Data</a></li>
+        </ul>
+
+        <div class="container">
+            <canvas style='width:600px;height:100px'id="emission_chart"></canvas>
+        </div>
+
+        <hr>
+        <div id="footprintTitle">
+            <h2 class="footprintTitle"> YOUR MONTHLY CARBON FOOTPRINT IS: </h2>
+        </div>
+        <div id="footprintValueholder">
+            
+        </div>
+        <p id="points"> You have accumulated 5000 points so far. </p>
+
+       <details id="comparison">
+       </details>
+        <button id="add_data_button" type="button"> Add Data </button>
+
+        <script src="dashboard.js"></script>
+    </body>
+</html>

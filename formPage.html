@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CFapp/style.css">
+        <title>form</title>
+    </head>
+    <body>
+      <ul id="nav_bar">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+        <li><a href="formPage.html">Add Data</a></li>
+      </ul> 
+
+      <div id= "formDiv">
+        <form id= "carbonFootprintform" action="dashboard.html" method="post">
+            
+          <br>
+          <label>Select the region that you live in</label><br>
+            <br>
+            <select name="region" id="region">
+              <option value="" selected="selected">Select a Region</option>
+              <option value="AKGD (ASCC Alaska Grid)">AKGD (ASCC Alaska Grid)</option>
+              <option value="AKMS (ASCC Miscellaneous)">AKMS (ASCC Miscellaneous)</option>
+              <option value="AZNM (WECC Southwest)">AZNM (WECC Southwest)</option>
+              <option value="CAMX (WECC California)">CAMX (WECC California)</option>
+              <option value="ERCT (ERCOT All)">ERCT (ERCOT All)</option>
+              <option value="FRCC (FRCC All)">FRCC (FRCC All)</option>
+              <option value="HIMS (HICC Miscellaneous)">HIMS (HICC Miscellaneous)</option>
+              <option value="HIOA (HICC Oahu)">HIOA (HICC Oahu)</option>
+              <option value="MROE (MRO East)">MROE (MRO East)</option>
+              <option value="MROW (MRO West)">MROW (MRO West)</option>
+              <option value="NEWE (NPCC New England)">NEWE (NPCC New England)</option>
+              <option value="NWPP (WECC Northwest)">NWPP (WECC Northwest)</option>
+              <option value="NYCW (NPCC NYC/Westchester)">NYCW (NPCC NYC/Westchester)</option>
+              <option value="NYLI (NPCC Long Island)">NYLI (NPCC Long Island)</option>
+              <option value="NYUP (NPCC Upstate NY)">NYUP (NPCC Upstate NY)</option>
+              <option value="RFCE (RFC East)">RFCE (RFC East)</option>
+              <option value="RFCM (RFC Michigan)">RFCM (RFC Michigan)</option>
+              <option value="RFCW (RFC West)">RFCW (RFC West)</option>
+              <option value="RMPA (WECC Rockies)">RMPA (WECC Rockies)</option>
+              <option value="SPNO (SPP North)">SPNO (SPP North)</option>
+              <option value="SPSO (SPP South)">SPSO (SPP South)</option>
+              <option value="SRMV (SERC Mississippi Valley)">SRMV (SERC Mississippi Valley)</option>
+              <option value="SRMW (SERC Midwest)">SRMW (SERC Midwest)</option>
+              <option value="SRSO (SERC South)">SRSO (SERC South)</option>
+              <option value="SRTV (SERC Tennessee Valley)">SRTV (SERC Tennessee Valley)</option>
+              <option value="SRVC (SERC Virginia/Carolina)">SRVC (SERC Virginia/Carolina)</option>
+            </select>
+
+            <img src="eGrid-map.png" alt="eGrid-map">
+
+              <br>
+                <br>
+              
+            <select name="state" id="state">
+              <option value="" selected="selected">Select a State</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District Of Columbia">District Of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+              <br>
+                <br>
+          <label>How many other people than yourself live in your household? </label><br>
+          <br>
+          <input type="text" id="householdNum"><br>
+        <br>
+        <br>
+          <label>What is your household's primary heating source?</label><br>
+          <br>
+          <select id="heatingSource">
+              <option value="Natural Gas">Natural Gas</option>
+              <option value="Electricity">Electricity</option>
+              <option value="Propane">Propane</option>
+              <option value="Wood">Wood</option>
+              <option value="noHeating">I don't heat my home</option>
+          </select>
+          <br>
+        <br>
+        <br>
+          <label>How much do you spend per month on heating your home?</label><br>
+          <br>
+          <input type="text" id="heatingCost"><br>
+        <br>
+        <br>
+          <label>How much do you spend per month on electricity?</label><br>
+          <br>
+          <input type="text" id="electrictyCost"><br>
+        <br>
+        <br>
+          <label>How many vehicles do you own?</label><br>
+          <br>
+         <input type="text" id="numVehicles" value = "0"><br>
+        <br>
+        <!-- <br>
+          <label> What is your vehicle's mile per gallon? If you do not own a vehicle, input 0: </label><br>
+          <br>
+          <input type="text" id="vehicleMPG"><br>
+        <br> -->
+        <br>
+          <label> How much do you spend per month on fuel for your vehicle? If you do not own a vehicle, input 0: </label><br>
+          <br>
+          <input type="text" id="carFuelcost" ><br>
+        <br>
+        <br>
+          <label>Estimate how many miles you drive per week. If you do not drive, input 0: </label><br>
+          <br>
+          <input type="text" id="milesDrivenweekly"><br>
+        <br>
+        <br>
+        <input type="submit" id= "submitButton" value="submit" onclick="setSessionstorage()">
+        
+
+        </form>
+      </div>
+      <script src="../CFapp/submitForm.js"></script>
+    </body>
+</html>
