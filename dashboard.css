@@ -113,3 +113,30 @@ input{
     font-size:30px;
     font-weight: bold;
 }
+
+#nav_bar{
+    list-style:none;
+    
+    text-align: center;
+    
+}
+
+
+#nav_bar li{
+    display:inline;
+}
+
+#nav_bar a{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    padding-right:15px;
+}
+#containerNavbar{
+    padding-right:65px;
+    margin:auto;
+    padding-bottom: 15px;
+    padding-top:15px;
+    
+}
+
